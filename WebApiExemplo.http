@@ -1,0 +1,17 @@
+// Exemplos de chamadas para testar a API por clientes compatíveis com arquivos .http.
+@WebApiExemplo_HostAddress = http://localhost:5000
+
+// Cria um proprietário antes de cadastrar seus veículos.
+POST {{WebApiExemplo_HostAddress}}/api/proprietarios
+Content-Type: application/json
+
+{
+  "nome": "Maria da Silva",
+  "cpf": "529.982.247-25",
+  "dataNascimento": "1990-05-15"
+}
+
+###
+
+// Filtra veículos pelo modelo, placa ou nomeProprietario.
+GET {{WebApiExemplo_HostAddress}}/api/veiculos?modelo=Corolla
