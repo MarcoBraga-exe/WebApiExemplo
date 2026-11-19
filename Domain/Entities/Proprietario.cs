@@ -1,6 +1,6 @@
 namespace WebApiExemplo.Domain.Entities;
 
-/// <summary>Representa o dono de veículos armazenado pela aplicação.</summary>
+/// <summary>Owner entity stored by the application.</summary>
 public class Proprietario
 {
     public Guid Id { get; set; }

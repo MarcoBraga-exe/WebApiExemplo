@@ -1,6 +1,6 @@
 namespace WebApiExemplo.Domain.Entities;
 
-/// <summary>Representa o veículo e a referência obrigatória ao seu proprietário.</summary>
+/// <summary>Vehicle entity linked to one owner.</summary>
 public class Veiculo
 {
     public Guid Id { get; set; }
